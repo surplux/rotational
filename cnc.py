@@ -182,7 +182,7 @@ class CNC_move(multiprocessing.Process):
         
 
 if __name__ == "__main__":
-    msm = CNC_move("COM9")
+    msm = CNC_move("COM9") #the COM where the USB to Device is connected 
     # msm = CNC_move("/dev/ttyUSB0")
     msm.wfd(True)
     msm.speed(100)  #the lower the faster
